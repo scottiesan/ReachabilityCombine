@@ -12,7 +12,7 @@ usage:
                 self.connectionLbl.text = $0.description
             })
             .store(in: &subscriptions!)
-    }
+    
     
     // for specific connection 
      try? Reachability().connectionPublisher(for: .wifi)
@@ -23,4 +23,4 @@ usage:
                 self.connectionLbl.text = $0.description
             })
             .store(in: &subscriptions!)
-    }
+    
